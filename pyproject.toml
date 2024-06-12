@@ -1,0 +1,40 @@
+[project]
+name = "fastapi-aws-template"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "kouji_nakamura", email = "41434466+7crabs@users.noreply.github.com" }
+]
+dependencies = [
+    "fastapi>=0.111.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = [
+    "pytest>=8.2.2",
+]
+
+[tool.ruff.lint]
+# Copied from https://docs.astral.sh/ruff/linter/#rule-selection
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+# Disable rules that conflict with format
+# ref. https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+ignore = ["E111", "E114", "E117"]
