@@ -1,0 +1,11 @@
+// Info https://containers.dev/implementors/json_reference/
+{
+  //	name of the dev container
+  "name": "rye",
+  "forwardPorts": [80],
+  "build": {
+    // Path is relative to the devcontainer.json file.
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  }
+}
