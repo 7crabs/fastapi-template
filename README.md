@@ -1,3 +1,3 @@
-# fastapi-aws-template
+# fastapi-template
 
 Describe your project here.
